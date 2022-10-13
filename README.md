@@ -1,5 +1,5 @@
 # Social Network API
-18 - NoSQL
+Social Network API using Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 
 
 ## Descriptions
-Since this project is about Social Networking where user can share their th
+This project is about Social Networking where user can share their thoughts, react to friends' thoughts, and create a friend list. It is important as a web developer to have a good understanding of the connection between the database and the API.
 
 
 ## Installations
