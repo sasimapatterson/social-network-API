@@ -7,12 +7,12 @@
 2. [Installations](#installations)
 3. [Testing](#testing)
 4. [Tech Use](#techUse)
-5. [Contributing](#contributing)
-6. [Visuals](#visuals)
-7. [Link](#link)
+5. [Visuals](#visuals)
+6. [References](#references)
+
 
 ## Descriptions
-
+Since this project is about Social Networking where user can share their th
 
 
 ## Installations
@@ -22,23 +22,37 @@ MongoDB is a document-oriented NoSQL database used for high volume data storage.
 
 To install MongoDB please follow this link https://www.mongodb.com/docs/manual/administration/install-community/.
 
-Express.js for routing.
+For routing.
 ```pip
   npm install express
 ```
 
-Mongoose package to connect to a MongoDB database.
+To connect to a MongoDB database.
 ```pip
   npm install mongoose --save
 ```
 
-Moment.js for time formatting in timestamp.
+For time formatting in timestamp.
 ```pip
   npm install moment --save
 ```
 
+To invoke the application
+```pip
+  npm i
+```
+
+To start the server
+```pip
+  nodemon
+```
+
 ## Testing
-After all the routes are created the Insomnia app is used for testing the REST APIs. 
+After all the routes are created the Insomnia app is used for testing the REST APIs. The APIs are grouped into two which are Thoughts and Users. 
+
+In the Thought routes we can do the CRUD operations for thoughts as well as creating and deleting reaction which is part of the Thoughts database.
+
+The User routes is similar to the Thought routes with the CRUD operation. Friend can be added and deleted via User routes. 
 
 Thoughts Routes
   * <mark>GET</mark>: Get Thoughts
@@ -57,3 +71,18 @@ Users Routes
   * <mark>PUT</mark>: Update User
   * <mark>DELETE</mark>: Delete User
   * <mark>DELETE</mark>: Delete Friend
+
+## Tech Use
+  * Node.js
+  * Express.js
+  * Nodemon
+  * JavaScript
+  * MongoDB
+  * Mongoose
+  * Moment.js
+  * Insomnia REST Client
+
+## References
+  * https://momentjs.com
+  * https://mongoosejs.com
+
