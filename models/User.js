@@ -16,11 +16,11 @@ const userSchema = new Schema(
       unique: true,
       required: true,
       // Source: codegrepper.com/ Regex pattern from challenge 17.
-      match:[/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/], 
+      match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/],
     },
     // Array of _id values referencing the Thought model
     thoughts: [
-      { 
+      {
         type: Schema.Types.ObjectId,
         ref: 'Thought'
       }

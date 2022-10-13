@@ -8,13 +8,13 @@ const reactionSchema = new Schema(
     reactionId: {
       type: Schema.Types.ObjectId,
       //default value is set to a new ObjectId
-      default: () => new Types.ObjectId(), 
+      default: () => new Types.ObjectId(),
     },
     responseBody: {
       type: String,
       required: true,
       //280 character max
-      maxlength: 280, 
+      maxlength: 280,
     },
     username: {
       type: String,
@@ -23,10 +23,10 @@ const reactionSchema = new Schema(
     createAt: {
       type: Date,
       //set default value to the current timestamp
-      default: Date.now, 
+      default: Date.now,
       // Use a getter method to format the timestamp on query. Stackoverflow and momentjs.com
-      get: (date) => 
-       moment(date).format('MMMM DD YYYY, h:mm:ss'),
+      get: (date) =>
+        moment(date).format('MMMM DD YYYY, h:mm:ss'),
     },
   },
   {
@@ -37,7 +37,7 @@ const reactionSchema = new Schema(
   }
 );
 
-const thoughtSchema = new Schema (
+const thoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
@@ -45,11 +45,11 @@ const thoughtSchema = new Schema (
       minlength: 1,
       maxlength: 280,
     },
-      createdAt: {
+    createdAt: {
       type: Date,
       default: Date.now,
       get: (date) =>
-        moment(date).format('MMMM DD YYYY, h:mm:ss'),  
+        moment(date).format('MMMM DD YYYY, h:mm:ss'),
     },
     // The user that created this thought
     username: {
