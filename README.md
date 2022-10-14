@@ -7,8 +7,10 @@ Social Network API using Express.js for routing, a MongoDB database, and the Mon
 2. [Installations](#installations)
 3. [Testing](#testing)
 4. [Tech Use](#techUse)
-5. [Visuals](#visuals)
-6. [References](#references)
+5. [Contributions](#contribution)
+6. [Visuals](#visuals)
+7. [References](#references)
+8. [Connect with me](#connect)
 
 
 ## Descriptions
@@ -82,7 +84,26 @@ Users Routes
   * Moment.js
   * Insomnia REST Client
 
+## Contributions
+  * Mr.Anthony Cooper
+  * Slack Support Team
+
+## Visual
+
+
+![get users](./images/getusers.png)
+
+![post reaction](./images/postreaction.png)
+
+![put updateuser](./images/put-updateuser.png)
+
+![deletethought](./images/deletethought.png)
+
+
 ## References
   * https://momentjs.com
   * https://mongoosejs.com
+
+## Connect with me
+[LinkedIn](https://www.linkedin.com/in/sasima-patterson-866a441b7/)
 
